@@ -396,6 +396,7 @@ button, input {
     border-radius: 12px;
     border: 3px solid transparent;
     font-size: 1.1rem;
+    color: #2D2D2D;
     background: white;
 }
 
@@ -407,8 +408,11 @@ button, input {
 
 .newsletter__button {
     background: #4ecdc4;
+    color: white;
     white-space: nowrap;
     padding: 1.25rem 2.5rem;
+    border-radius: 12px;
+    font-weight: 700;
 }
 
 .newsletter__button:hover {
@@ -524,6 +528,8 @@ button, input {
     color: white;
     padding: 1rem 2rem;
     font-size: 1rem;
+    border-radius: 8px;
+    font-weight: 600;
 }
 
 .footer__form-button:hover {
@@ -560,53 +566,203 @@ button, input {
     opacity: 0.8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
+    .main-banner__title {
+        font-size: 3rem;
+    }
+    
+    .features__title,
+    .new-ceramics__title,
+    .popular-products__title,
+    .about__title,
+    .newsletter__title {
+        font-size: 2.8rem;
+    }
+    
+    .main-banner__container {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .main-banner__title {
+        font-size: 2.5rem;
+    }
+    
+    .features__title,
+    .new-ceramics__title,
+    .popular-products__title,
+    .about__title,
+    .newsletter__title {
+        font-size: 2.5rem;
+    }
+    
+    .features__grid,
+    .new-ceramics__grid,
+    .popular-products__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .about__container {
+        gap: 3rem;
+    }
+    
+    .footer__sections {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .header__container,
+    .main-banner__container,
+    .features__container,
+    .new-ceramics__container,
+    .popular-products__container,
+    .about__container,
+    .footer__container {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
     .header__container {
         flex-direction: column;
         gap: 1.5rem;
+        text-align: center;
     }
     
     .nav__list {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         gap: 1rem;
+        padding: 1rem 0;
+    }
+    
+    .nav__link {
+        display: block;
+        width: 180px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0.75rem 1rem;
     }
     
     .main-banner__container {
         flex-direction: column;
         text-align: center;
-        gap: 3rem;
+        gap: 2rem;
     }
     
     .main-banner__title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    
+    .main-banner__description {
+        font-size: 1.15rem;
+    }
+    
+    .features__grid,
+    .new-ceramics__grid,
+    .popular-products__grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .feature-card,
+    .product-card {
+        padding: 1.5rem;
     }
     
     .about__container {
         grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-    
-    .about__title {
-        font-size: 2.5rem;
-    }
-    
-    .footer__sections {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer__bottom {
-        flex-direction: column;
         gap: 2rem;
         text-align: center;
     }
     
-    .newsletter__form {
-        flex-direction: column;
+    .about__title {
+        font-size: 2rem;
     }
     
-    .features__title,
-    .new-ceramics__title,
-    .popular-products__title {
-        font-size: 2.5rem;
+    .newsletter__form {
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .newsletter__input {
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+    
+    .footer__sections {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .footer__list {
+        align-items: center;
+    }
+    
+    .footer__form {
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .footer__input {
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+    
+    .footer__bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .main-banner,
+    .features,
+    .new-ceramics,
+    .popular-products,
+    .about,
+    .newsletter {
+        padding: 4rem 0;
+    }
+    
+    .new-ceramics__button,
+    .popular-products__button,
+    .about__button {
+        display: block;
+        margin: 2rem auto 0;
+        width: 80%;
+    }
+    
+    .header__icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .header__logo {
+        font-size: 1.75rem;
+    }
+    
+    .button {
+        width: 90%;
+        padding: 0.875rem 1.5rem;
+    }
+    
+    .newsletter__input,
+    .footer__input {
+        padding: 1rem 1.25rem;
+    }
+    
+    .header__container,
+    .main-banner__container,
+    .features__container,
+    .new-ceramics__container,
+    .popular-products__container,
+    .about__container,
+    .footer__container {
+        padding: 0 1rem;
     }
 }
