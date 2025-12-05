@@ -639,8 +639,9 @@ button, input {
     
     .nav__link {
         display: block;
-        width: 200px;
+        width: 180px;
         text-align: center;
+        margin: 0 auto;
         padding: 0.75rem 1rem;
     }
     
