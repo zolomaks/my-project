@@ -13,13 +13,20 @@
 <body>
     <header class="header">
     <div class="header__container">
-        <img class="header__icon" src="assets/icons/Search.png" alt="Search">
-        <a class="header__logo" href="index.html">Avion</a>
-        <div class="header__icons">
-            <img class="header__icon" src="assets/icons/Shopping--cart.png" alt="Shopping_cart">
-            <img class="header__icon" src="assets/icons/User--avatar.png" alt="User_avatar">
-        </div>
+    <img class="header__icon" src="assets/icons/Search.png" alt="Search">
+    <a class="header__logo" href="index.html">Avion</a>
+    
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+    </button>
+    
+    <div class="header__icons">
+        <img class="header__icon" src="assets/icons/Shopping--cart.png" alt="Shopping_cart">
+        <img class="header__icon" src="assets/icons/User--avatar.png" alt="User_avatar">
     </div>
+</div>
     
     <nav class="header__nav nav">
     <ul class="nav__list">
@@ -225,5 +232,7 @@
             </div>
         </div>
     </footer>
+    <button class="scroll-top" id="scrollTop" aria-label="Up"> ↑ </button>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
